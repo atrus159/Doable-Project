@@ -1,10 +1,9 @@
 switch(sprite_index){
-	case player_jumping:
+	/*case player_jumping:
 	sprite_index = player_mask
 	motion_add(90,jumpSpeed)
 	frozen = false;
-	break;
-	
+	break;*/
 	case player_landing:
 	sprite_index = player_mask
 	frozen = false;

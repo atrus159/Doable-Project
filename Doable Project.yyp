@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "45bee590-2481-4621-9d34-4b6f1e2d1e01",
+            "Value": {
+                "id": "66fd541f-2e1a-4acc-90f9-35a26e23d18c",
+                "resourcePath": "sprites\\player_walking\\player_walking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "57a5317a-48c3-463c-8ec6-e6d0be6b55ce",
             "Value": {
                 "id": "a487629d-5358-4dc5-b6f8-e595ec537b78",
@@ -127,14 +135,6 @@
             }
         },
         {
-            "Key": "99b5809b-5651-4f37-9007-ab52b3001e08",
-            "Value": {
-                "id": "00a17953-7fce-453c-8cda-de009152eef5",
-                "resourcePath": "sprites\\player_jumping\\player_jumping.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "9b9b043e-9bdf-4963-8e42-9917cae5ab41",
             "Value": {
                 "id": "88828f41-fd2e-4499-a2f4-4e6d8cb27f8c",
@@ -163,6 +163,14 @@
             "Value": {
                 "id": "7c3167d2-4c8a-4bad-a82b-b31dd9f7b187",
                 "resourcePath": "sprites\\player_attack\\player_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c947fc7c-d94b-4306-aec2-af0556586fbd",
+            "Value": {
+                "id": "f07c878f-f75c-4c2e-9ca0-cae8a5fac471",
+                "resourcePath": "sprites\\player_air\\player_air.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -196,6 +204,14 @@
                 "id": "051569d8-1f27-4707-985f-71864f61c6f9",
                 "resourcePath": "views\\d4daadb6-263c-4314-b3b0-0d95b42a1c0c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d9dbbc96-cdc4-4c14-a4a9-f4ef9864fcb0",
+            "Value": {
+                "id": "36393a50-78dc-4f66-9ef5-4d8a5a768c28",
+                "resourcePath": "sprites\\player_standing\\player_standing.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
