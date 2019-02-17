@@ -4,5 +4,6 @@ if(!inAir){
 frozen = true*/
 	motion_add(90,jumpSpeed)
 	sprite_index = player_air
+	inAir = 1
 }
 }

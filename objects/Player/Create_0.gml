@@ -7,3 +7,4 @@ maxFallSpeed = 20
 pGravity = 0.5
 inAir = false
 facing = 1 //1 = right, -1 = left
+currentWeapon = instance_create_depth(0,0,-1,Weapon)

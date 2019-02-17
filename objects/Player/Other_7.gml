@@ -9,7 +9,7 @@ switch(sprite_index){
 	frozen = false;
 	break;
 	case player_attack:
-	sprite_index = player_mask
+	sprite_index = player_standing
 	frozen = false
 	break;
 	

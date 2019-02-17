@@ -1,0 +1,16 @@
+sprite_g_left = player_attack
+hitbox_g_left = temp_hitbox_left
+sprite_g_right = player_attack
+hitbox_g_right = temp_hitbox_right
+sprite_g_up = player_attack
+hitbox_g_up = temp_hitbox_up
+sprite_g_down = player_attack
+hitbox_g_down = temp_hitbox_down
+sprite_a_left = player_attack
+hitbox_a_left = temp_hitbox_air_left
+sprite_a_right = player_attack
+hitbox_a_right = temp_hitbox_air_right
+sprite_a_up = player_attack
+hitbox_a_up = temp_hitbox_air_up
+sprite_a_down = player_attack
+hitbox_a_down = temp_hitbox_air_down

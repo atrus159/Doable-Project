@@ -1,6 +1,6 @@
-if(!frozen){
+if(!frozen || inAir){
 	facing = 1;
-		if(sprite_index != player_air){
+		if(!inAir){
 		sprite_index = player_walking;
 		}
 if(!place_meeting(x+pSpeed,y,wall)){
