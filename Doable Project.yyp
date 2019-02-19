@@ -111,6 +111,22 @@
             }
         },
         {
+            "Key": "51ce8d5d-4293-4e44-ba39-03cc431c88ca",
+            "Value": {
+                "id": "844ad7bb-d253-489f-a2e0-df94c7683801",
+                "resourcePath": "sprites\\player_roll\\player_roll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "54b6ccc0-a930-4d25-a2cb-c6b02b0df7cc",
+            "Value": {
+                "id": "6ca6c480-6552-406a-b8b9-97a0a8db73fe",
+                "resourcePath": "sprites\\player_end_roll\\player_end_roll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "57a5317a-48c3-463c-8ec6-e6d0be6b55ce",
             "Value": {
                 "id": "a487629d-5358-4dc5-b6f8-e595ec537b78",

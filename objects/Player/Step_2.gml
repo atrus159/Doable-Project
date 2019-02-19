@@ -27,6 +27,13 @@ if(!keyboard_check(vk_left) && !keyboard_check(vk_right)){
 	sprite_index = player_standing	
 }
 }
+if(sprite_index == player_roll){
+	if(!place_meeting(x+facing*rollSpeed,y,wall)){
+	x += facing*rollSpeed
+	}else{
+	sprite_index = player_standing;	
+	}
+}
 if(sprite_index == player_standing && frozen && !inAir){
 		frozen = 0;
 }
