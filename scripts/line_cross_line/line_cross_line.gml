@@ -24,13 +24,11 @@ if(ax == bx){
 		return true	
 	}	
 }
-
-if(mOne == mTwo){
-	if(bOne ==bTwo){
+if(ay==by && by==cy && cy==dy && dy==ay){
+	if(is_between(ax,cx,dx) || is_between(bx,cx,dx) || is_between(cx,ax,bx) || is_between(dx,ax,bx)){
 		return true	
-	}else{
-		return false	
 	}
+	return false
 }
 
 var intersectX = (bTwo-bOne)/(mOne-mTwo)

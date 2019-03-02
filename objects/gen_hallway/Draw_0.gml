@@ -15,7 +15,7 @@ switch(type){
 	draw_line_width(startx,endy,endx,endy,64);
 	break;
 	case 3:
-		draw_set_color(c_black)
+		draw_set_color(c_blue)
 	draw_line_width(startx,starty,endx,starty,64);
 	draw_line_width(endx,starty,endx,endy,64);
 	break;

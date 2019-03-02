@@ -1,6 +1,6 @@
 
 {
-    "name": "room2",
+    "name": "collisionTest",
     "id": "cb706da4-72c0-41ff-b156-7a3d6d8179d9",
     "creationCodeFile": "",
     "inheritCode": false,
