@@ -1,12 +1,21 @@
-scan = ""
-for(var i = 32; i<room_width; i+=64){
-	for(var j = 32; j<room_height; j+=64){
-		if(collision_point(i,j,wall,true,true)){
-			scan +="1"	
-		}else{
-			scan += "0"
+var scan = ""
+for(var i = 0; i<=room_width; i+=32){
+	for(var j = 0; j<room_height; j+=32){
+		var found = 0
+		with(wall){
+			if(x==i && y==j){
+				scan +="w"
+				found =1
+				j+=32
+			}
+		}
+		
+		if(!found){
+			scan+="e"	
 		}
 	}
-	scan += "9"
+	scan += "n"
 }
-clipboard_set_text("\""+scan+"\"")
+
+
+clipboard_set_text("\""+string_compress(scan,(room_height/32)-1)+"\"")

@@ -85,6 +85,7 @@ topRoom.rwidth = largeWidth * 64
 topRoom.rheight = largeHeight*64
 ds_list_shuffle(large_rooms)
 topRoom.room_code = ds_list_find_value(large_rooms,0)
+instance_create_depth(topRoom.x,topRoom.y,0,Player)
 var largeCount = 0
 with(gen_room){
 	if(type == 1 && rwidth == other.largeWidth && rheight == other.largeHeight){

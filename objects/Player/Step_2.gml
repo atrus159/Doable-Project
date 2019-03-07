@@ -8,13 +8,17 @@ if(vspeed > maxFallSpeed){
 	vspeed = maxFallSpeed	
 }
 if(place_meeting(x,y+vspeed,wall)){
-	while(!place_meeting(x,y+1,wall)){
-		y+=1
+	var dir = 1
+	if(direction>0 && direction<180){
+		dir = -1	
+	}
+	while(!place_meeting(x,y+dir,wall)){
+		y+=dir
 	}
 	if(sprite_index == player_air){
 	sprite_index = player_standing
 	}
-	if(vspeed == maxFallSpeed){
+	if(vspeed == maxFallSpeed && direction ==270){
 	sprite_index = player_landing
 	image_index = 0
 	frozen = true

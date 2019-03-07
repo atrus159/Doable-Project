@@ -1,2 +1,2 @@
-build = "001010911010191001009010111910101090101019"
+build = "enew:12nenewe:20wnenewe:20wnenewe:10we:8wnenewe:20wnenewe:20wnenewe:20wnenewe:20wnenewe:20wnenewe:20wnenewe:20wnenewe:14we:4wnenewe:20wnenewe:20wnenewe:20wnenew:12ne"
 buildRoom(0,0,build)
