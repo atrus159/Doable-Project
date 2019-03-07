@@ -17,7 +17,7 @@ mediumHeight = 12
 largeWidth = 24
 largeHeight = 20
 
-hwidth = 96
+hwidth = 128
 
 for(var i = 0; i<largeProb; i++){
 	ds_list_add(RoomSizes, 0)	

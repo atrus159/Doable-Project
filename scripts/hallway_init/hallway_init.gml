@@ -51,24 +51,28 @@ switch(type){
 	endx = endxedge
 	starty = (startyedge+endyedge)/2
 	endy = starty
+	snapstartend()
 	break;
 	case 1:
 	starty = startyedge
 	endy = endyedge
 	startx = (startxedge+endxedge)/2
 	endx = startx
+	snapstartend()
 	break;
 	case 2:
 	startx = target.x
 	starty = startyedge
 	endx = endxedge
 	endy = destination.y
+	snapstartend() 
 	break;
 	case 3:
 	startx = startxedge
 	starty = target.y
 	endx = destination.x
 	endy = endyedge
+	snapstartend()
 	break;
 	
 }

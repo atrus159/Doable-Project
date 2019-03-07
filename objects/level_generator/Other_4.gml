@@ -206,12 +206,13 @@ with(gen_hallway){
 
 //build room
 with(gen_room){
+	move_snap(64,64)
 	if(type == 0){
 		instance_destroy(self)	
 	}
 }
-for(var i = 0; i<room_width; i+=64){
-	for(var j = 0; j<room_width; j+=64){
+for(var i = 32; i<room_width; i+=64){
+	for(var j = 32; j<room_width; j+=64){
 		var create = true
 		with(gen_room){
 			if(point_in_rectangle(i,j,x-rwidth/2+32,y-rheight/2+32,x+rwidth/2-32,y+rheight/2-32)){
