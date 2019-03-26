@@ -6,3 +6,10 @@ xdisp = 0
 ydisp = 0
 link_targets = ds_list_create()
 room_code = ""
+hall_type = 0
+
+top_door = false
+left_door = false
+right_door = false
+bot_door = false
+door_type = 0

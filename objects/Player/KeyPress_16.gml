@@ -1,6 +1,6 @@
 if(!frozen){
 	if(!inAir){
-		frozen = true;	
+		frozen = true
 		sprite_index = player_roll
 		image_index = 0
 	}

@@ -1,4 +1,4 @@
-if(!frozen){
+if(!frozen && !climbing){
 	frozen = true
 	if(!inAir){
 		if(keyboard_check(vk_up)){

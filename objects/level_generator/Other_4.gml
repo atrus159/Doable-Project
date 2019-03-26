@@ -20,20 +20,20 @@ for(var i = 0; i<roomCount; i++){
 		case 0:
 			new_room.rwidth = largeWidth*64
 			new_room.rheight = largeHeight*64
-			ds_list_shuffle(large_rooms)
-			new_room.room_code = ds_list_find_value(large_rooms,0)
+			//ds_list_shuffle(large_rooms)
+			//new_room.room_code = ds_list_find_value(large_rooms,0)
 		break;
 		case 1:
 			new_room.rwidth = mediumWidth*64
 			new_room.rheight = mediumHeight*64
-			ds_list_shuffle(medium_rooms)
-			new_room.room_code = ds_list_find_value(medium_rooms,0)
+			//ds_list_shuffle(medium_rooms)
+			//new_room.room_code = ds_list_find_value(medium_rooms,0)
 		break;
 		case 2:
 			new_room.rwidth = smallWidth*64
 			new_room.rheight = smallHeight*64
-			ds_list_shuffle(small_rooms)
-			new_room.room_code = ds_list_find_value(small_rooms,0)
+			//ds_list_shuffle(small_rooms)
+			//new_room.room_code = ds_list_find_value(small_rooms,0)
 		break;
 	}
 	with(new_room){
@@ -83,8 +83,8 @@ for(var i = 0; i<room_height; i++){
 }
 topRoom.rwidth = largeWidth * 64
 topRoom.rheight = largeHeight*64
-ds_list_shuffle(large_rooms)
-topRoom.room_code = ds_list_find_value(large_rooms,0)
+//ds_list_shuffle(large_rooms)
+//topRoom.room_code = ds_list_find_value(large_rooms,0)
 instance_create_depth(topRoom.x,topRoom.y,0,Player)
 var largeCount = 0
 with(gen_room){
@@ -109,8 +109,8 @@ for(var i = room_height; i>0; i--){
 }
 botRoom.rwidth = largeWidth * 64
 botRoom.rheight = largeHeight*64
-ds_list_shuffle(large_rooms)
-botRoom.room_code = ds_list_find_value(large_rooms,0)
+//ds_list_shuffle(large_rooms)
+//botRoom.room_code = ds_list_find_value(large_rooms,0)
 }
 
 seperateRooms()
@@ -202,6 +202,24 @@ with(gen_hallway){
 		}
 	}
 }
+//assign room contents
+with(gen_hallway){
+	give_rooms_doors()	
+}
+with(gen_room){
+	set_door_type()
+	if(rwidth == other.smallWidth*64){
+		ds_list_shuffle(other.small_rooms[door_type])
+		room_code = ds_list_find_value(other.small_rooms[door_type],0)
+	}else if(rwidth == other.mediumWidth*64){
+		ds_list_shuffle(other.medium_rooms[door_type])
+		room_code = ds_list_find_value(other.medium_rooms[door_type],0)
+	}else if(rwidth == other.largeWidth*64){
+		ds_list_shuffle(other.large_rooms[door_type])
+		room_code = ds_list_find_value(other.large_rooms[door_type],0)
+	}
+}
+
 
 
 //build room

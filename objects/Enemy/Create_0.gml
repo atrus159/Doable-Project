@@ -1,2 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
+state = 0
+eHealth = 100
+knockback_mod = 1
+eGravity = 0.5
+maxFallSpeed = 20
+falling_sprite = player_air
+standing_sprite = player_standing
+hitstun_sprite = player_landing
+inAir = 0
+hitboxes_hit = ds_list_create()
+corpse = lamp_pic

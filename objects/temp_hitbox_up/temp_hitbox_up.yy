@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "temp_hitbox_up",
     "eventList": [
-        
+        {
+            "id": "143a0a2d-ac03-4385-b7ed-56770a37ec1c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "667900e0-f918-4a29-bc8a-3e90052c2b7f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

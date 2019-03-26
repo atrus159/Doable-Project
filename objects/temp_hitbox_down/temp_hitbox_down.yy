@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "temp_hitbox_down",
     "eventList": [
-        
+        {
+            "id": "86ba759b-e465-41b1-ae7f-d64f2924039a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "3e2ceb0a-7b43-412f-ba59-defe691df348"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "171b07eb-87da-4cd9-80c5-6015d660f5c0",
+    "spriteId": "ef1dbb24-2403-44e3-b3c8-79d0f35635a9",
     "visible": true
 }

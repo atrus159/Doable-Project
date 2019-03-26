@@ -9,3 +9,7 @@ inAir = false
 facing = 1 //1 = right, -1 = left
 currentWeapon = instance_create_depth(0,0,-1,Weapon)
 rollSpeed = 8
+climbing = false
+climbSpeed = 4
+stunned = 0
+invulnerable = 0
