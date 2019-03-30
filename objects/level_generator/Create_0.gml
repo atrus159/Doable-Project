@@ -28,7 +28,7 @@ for(var i = 0; i<mediumProb; i++){
 for(var i = 0; i<smallProb; i++){
 	ds_list_add(RoomSizes, 2)	
 }
-
+stage = 0
 
 //small_rooms
 //right

@@ -1,5 +1,15 @@
-/*randomize()
-//initial creation
+draw_set_color(c_black)
+draw_rectangle(0,0,2000,2000,false)
+draw_set_font(font0)
+draw_set_color(c_aqua)
+draw_text(100,450,"Loading...")
+draw_set_color(c_dkgray)
+draw_rectangle(90,490,100+10*64+10,560,false)
+draw_set_color(c_aqua)
+draw_rectangle(100,500,100+stage*64,550,false)
+
+switch(stage){
+case 0:
 mx = room_width/2
 my = room_height/2
 for(var i = 0; i<roomCount; i++){
@@ -40,6 +50,8 @@ for(var i = 0; i<roomCount; i++){
 		move_snap(64,64)	
 	}
 }
+break;
+case 1:
 //delete duplicates
 with(gen_room){
 	with(gen_room){
@@ -50,8 +62,12 @@ with(gen_room){
 		}
 	}
 }
+break;
+case 2:
 //seperation
 seperateRooms()
+break;
+case 3:
 //select rooms
 for(var i = 0; i < mainRoomCount; i++){
 greatestA = 0
@@ -115,7 +131,8 @@ botRoom.rheight = largeHeight*64
 
 seperateRooms()
 
-
+break;
+case 4:
 //draw path
 completed = false
 var found = false
@@ -153,9 +170,9 @@ while(instance_exists(type_1_marker)){
 		}
 }
 
-
+break;
 //make halways
-
+case 5:
 with(gen_room){
 	if(type == 2){
 		for(var i = 0; i<ds_list_size(link_targets);i++){
@@ -166,7 +183,8 @@ with(gen_room){
 		}
 	}
 }
-
+break;
+case 6:
 //get rooms attached to hallways
 with(gen_hallway){
 	with(gen_room){
@@ -202,7 +220,9 @@ with(gen_hallway){
 		}
 	}
 }
+break;
 //assign room contents
+case 7:
 with(gen_hallway){
 	give_rooms_doors()	
 }
@@ -220,7 +240,8 @@ with(gen_room){
 	}
 }
 
-
+break;
+case 8:
 
 //build room
 with(gen_room){
@@ -337,7 +358,8 @@ with(noncritical_wall){
 		}	
 	
 }
-
+break;
+case 9:
 with(gen_hallway){
 	var startDoor = instance_create_depth(startx,starty,0,door)
 	var endDoor = instance_create_depth(endx,endy,0,door)
@@ -399,4 +421,15 @@ with(gen_hallway){
 	//instance_destroy(self)	
 }
 
-*/
+	
+break;
+case 10:
+
+instance_destroy(self)
+	
+break;
+	
+}
+
+
+stage ++

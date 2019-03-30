@@ -1,5 +1,6 @@
 state = 0
 eHealth = 100
+eMaxHealth = 100
 knockback_mod = 1
 eGravity = 0.5
 maxFallSpeed = 20

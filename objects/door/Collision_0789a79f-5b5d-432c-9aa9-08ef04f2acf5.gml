@@ -1,0 +1,4 @@
+var activator = instance_create_depth(0,0,0,door_activate)
+activator.target = id
+activator.t = door_time
+instance_deactivate_object(self)

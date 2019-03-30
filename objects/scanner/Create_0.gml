@@ -4,7 +4,7 @@ for(var i = 0; i<=room_width; i+=32){
 		var found = 0
 		with(wall){
 			if(x==i && y==j){
-				scan +="w"
+				scan +="w"	
 				found =1
 				j+=32
 			}

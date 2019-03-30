@@ -31,3 +31,8 @@ if(place_meeting(x+hspeed,y,wall)){
 	}
 	hspeed = 0
 }
+
+if(eHealth<=0){
+	instance_create_depth(x,y,0,corpse)
+	instance_destroy(self)	
+}
