@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "d9f4a69b-1869-46f7-ad11-019b20b6615e",
+            "Value": {
+                "id": "361652f3-7fb2-4f0f-90f5-474a9a4a7980",
+                "resourcePath": "sprites\\test_Lop\\test_Lop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "da0f421a-ecba-46eb-867f-a20297509934",
             "Value": {
                 "id": "dbf39e8a-9180-4ca0-be52-a9b9bb89ddd8",
