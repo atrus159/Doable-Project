@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "11dc68ad-0589-4bd6-8165-afe0ea92da03",
+            "Value": {
+                "id": "545e5e8a-37b2-4400-9cb1-9fc7ad322aca",
+                "resourcePath": "objects\\Enemy_eyeball_ground\\Enemy_eyeball_ground.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15582278-5a94-4e21-879e-c348ac70bfdb",
             "Value": {
                 "id": "95bfdbfa-a8ae-4e64-b375-3a080bdab10f",
@@ -116,6 +124,14 @@
                 "id": "2870d2e6-b80e-4cd5-89f1-14169e83d180",
                 "resourcePath": "objects\\temp_hitbox_air_down\\temp_hitbox_air_down.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1aa51f01-f4a5-4f9c-b566-f9f972a9b1b0",
+            "Value": {
+                "id": "017bf32d-5ae0-44f2-ba61-e8bcaa0df21c",
+                "resourcePath": "rooms\\Enemy_test\\Enemy_test.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1055,6 +1071,14 @@
             }
         },
         {
+            "Key": "ce4c0271-f809-42de-aa00-9722795d23db",
+            "Value": {
+                "id": "2b2420bb-db49-4276-82f0-98e66a091956",
+                "resourcePath": "sprites\\wall_sprt\\wall_sprt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cf4ee4e5-8139-4c47-adbd-64ac762091c9",
             "Value": {
                 "id": "4e79c169-4735-4ac3-b267-05bb06483fe3",
@@ -1163,6 +1187,14 @@
             "Value": {
                 "id": "bc06ea5d-ca59-4927-b8b9-37a5bbfef612",
                 "resourcePath": "sprites\\player_landing\\player_landing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e32f3254-1b2f-477a-9693-4f76798c17ad",
+            "Value": {
+                "id": "5a90744e-792b-43e8-a201-bfa9525f5355",
+                "resourcePath": "sprites\\eyeball_sprt\\eyeball_sprt.yy",
                 "resourceType": "GMSprite"
             }
         },
