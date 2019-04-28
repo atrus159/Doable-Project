@@ -7,7 +7,7 @@ draw_set_color(c_dkgray)
 draw_rectangle(90,490,100+10*64+10,560,false)
 draw_set_color(c_aqua)
 draw_rectangle(100,500,100+stage*64,550,false)
-
+draw_text(100, 100, stage);
 switch(stage){
 case 0:
 mx = room_width/2

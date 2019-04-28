@@ -10,3 +10,6 @@ if(sprite_index == player_roll){
 }else{
 	mask_index = player_mask	
 }
+if(abs(hspeed)>pSpeed){
+	hspeed /= 1.01;	
+}
