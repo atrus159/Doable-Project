@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "05c7aeff-4476-4c41-910e-04eac021e525",
+            "Value": {
+                "id": "359d3e5e-e2e9-44fe-a946-664dd8fd7c2c",
+                "resourcePath": "shaders\\hit_shader\\hit_shader.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "08ebc4ab-929a-4f70-b159-0ce651d6a55c",
             "Value": {
                 "id": "d6c44dbf-ffb0-416c-9f9a-7aa5ce1519a1",
@@ -532,6 +540,14 @@
                 "id": "48485766-ab01-41e3-8c45-8e878260c3f6",
                 "resourcePath": "scripts\\line_cross_line\\line_cross_line.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "70673219-39fa-4e2d-9648-27374c790b96",
+            "Value": {
+                "id": "4b652ecc-8a8f-47ae-9419-c5ed079a6ffb",
+                "resourcePath": "sprites\\x_button\\x_button.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1268,6 +1284,14 @@
                 "id": "5d959d09-d99a-47e9-9f19-3e0ba4d4eb9d",
                 "resourcePath": "rooms\\combat_test\\combat_test.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "eb7ce079-21c2-4b6f-8d21-d5caa1165359",
+            "Value": {
+                "id": "93a03439-9fba-4626-bd41-e5255c835b62",
+                "resourcePath": "sprites\\border_temp1\\border_temp1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

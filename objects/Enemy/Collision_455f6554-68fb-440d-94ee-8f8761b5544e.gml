@@ -16,4 +16,9 @@ if(ds_list_find_index(hitboxes_hit,other)==-1){
 			motion_set(90,12)	
 		}
 	}
+	if(other.freeze){
+	if(!instance_exists(freezeFrame)){
+		instance_create_depth(0,0,-1,freezeFrame)
+	}	
+	}
 }

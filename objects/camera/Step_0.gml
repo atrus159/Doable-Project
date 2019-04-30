@@ -1,3 +1,4 @@
+if(instance_exists(Player)){
 if(centeringX == 0){
 	if(abs(Player.x-x)>xrange){
 		centeringX = sign(Player.x-x);
@@ -18,7 +19,7 @@ if(centeringY == 0){
 		centeringY = 0;	
 	}
 }
-
+}
 
 
 /*

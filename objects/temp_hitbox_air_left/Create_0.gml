@@ -1,3 +1,5 @@
 event_inherited()
 angle = 150
-knockback = 10
+knockback = 25
+freeze = true
+damage = 3;
