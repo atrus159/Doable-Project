@@ -17,7 +17,7 @@ switch (state)
    }
    
    //check if it sees the player
-   if (enemy_detection(sight_width)){
+   if (enemy_detection(sight_width, sight_height)){
 	   state = 2;
    }
    
@@ -38,41 +38,52 @@ switch (state)
 		if (!place_meeting(x+(hspeed+1), y, wall)){
 			walkDir = choose(1,-1);
 		}else if(hspeed > 0){
-			walkDir = 1;
+			walkDir = -1;
 		}else{
-			walkDir = 0;
+			walkDir = 1;
 		}
 		walkFrames = 0;
 		hspeed = 0;
 	}
 	
 	//check if it sees the player
-   if (enemy_detection(sight_width)){
+   if (enemy_detection(sight_width, sight_height)){
 	   state = 2;
    }
+   
 	break;
 	
 	case 2:
 	//the enemy is going to chase the player
-	if (enemy_detection(losingSight_width)){ //the losing sight area is larger than the sight area
-				if (!place_meeting(x+(hspeed+1), y, wall)){
+	if (enemy_detection(losingSight_width, losingSight_height)){ //the losing sight area is larger than the sight are			
 					
 	if (x - Player.x > 0){
+		
+		if (!place_meeting(x-(chasingSpeed+1), y, wall)){
 		hspeed = -chasingSpeed;
+		}else{
+			hspeed = 0;
+		}
+		
 		 }else if(x - Player.x < 0){
+			 if (!place_meeting(x+(chasingSpeed+1), y, wall)){
 		 hspeed = chasingSpeed;
-	 }
-				}else{
-					hspeed = 0;
-				}
-	 
+		}else{
+			hspeed = 0;
+		}
+
+	}
+	
 	}else{
 		//if the enemy does not see the player, go back to stationary
 		state = 0;
+		hspeed = 0;
 	}
 	break;
+
 }
-	
+
+
   
 	   
 	   
