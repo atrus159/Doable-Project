@@ -1455,6 +1455,14 @@
             }
         },
         {
+            "Key": "fbdeda18-431b-41a0-ac1a-152e6d2b44bb",
+            "Value": {
+                "id": "e7d9ec6c-2cbb-40c9-86f5-5655c5b909d8",
+                "resourcePath": "scripts\\enemy_detection\\enemy_detection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fc28bd52-8782-434c-a7d9-8b5d8a9809e1",
             "Value": {
                 "id": "07583d1d-14ab-4343-abda-7d7a5ec79fa0",
@@ -1517,7 +1525,8 @@
         "dc0cd5a0-0422-4628-bfd3-7b633eef4665",
         "6fec0371-f3af-405b-9580-bf1e21a3d327",
         "e758d167-d455-4e66-b402-8d33b9a03625",
-        "edb2c07a-b5a0-431d-9574-6387794a41e1"
+        "edb2c07a-b5a0-431d-9574-6387794a41e1",
+        "fbdeda18-431b-41a0-ac1a-152e6d2b44bb"
     ],
     "tutorial": ""
 }
