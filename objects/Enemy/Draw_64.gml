@@ -7,7 +7,6 @@ var display_scalex = display_get_gui_width()/cw;
 var display_scaley = display_get_gui_height()/ch;
 var xx = (x-cx)*display_scalex;
 var yy = (y-cy)*display_scaley;
-
 draw_set_color(c_black)
 draw_rectangle(xx-sprite_width/2-15,yy-sprite_height/2-50,xx+sprite_width/2+15,yy-sprite_height/2-30,false)
 draw_set_color(c_red)

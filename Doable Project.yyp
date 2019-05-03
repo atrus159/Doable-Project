@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "05c7aeff-4476-4c41-910e-04eac021e525",
+            "Value": {
+                "id": "359d3e5e-e2e9-44fe-a946-664dd8fd7c2c",
+                "resourcePath": "shaders\\hit_shader\\hit_shader.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "08ebc4ab-929a-4f70-b159-0ce651d6a55c",
             "Value": {
                 "id": "d6c44dbf-ffb0-416c-9f9a-7aa5ce1519a1",
@@ -391,6 +399,14 @@
             }
         },
         {
+            "Key": "575f59dc-0d39-4d9b-9be8-16b80d6b352b",
+            "Value": {
+                "id": "73cdd096-edc9-418d-a311-c31bd00d0670",
+                "resourcePath": "sprites\\player_standing2\\player_standing2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "57a5317a-48c3-463c-8ec6-e6d0be6b55ce",
             "Value": {
                 "id": "a487629d-5358-4dc5-b6f8-e595ec537b78",
@@ -535,6 +551,14 @@
             }
         },
         {
+            "Key": "70673219-39fa-4e2d-9648-27374c790b96",
+            "Value": {
+                "id": "4b652ecc-8a8f-47ae-9419-c5ed079a6ffb",
+                "resourcePath": "sprites\\x_button\\x_button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "70d593a3-aef1-4512-9b43-b0b0281564cc",
             "Value": {
                 "id": "baa257d4-0494-439f-b4ea-1a33d461ab98",
@@ -555,6 +579,14 @@
             "Value": {
                 "id": "0d533b8b-3712-4b82-99e9-bc921bd5d0fd",
                 "resourcePath": "sprites\\player_climbing_up\\player_climbing_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "71545bf6-f82e-426c-9445-7d9b744dbcf7",
+            "Value": {
+                "id": "7de67fe7-6d33-4327-85ff-2e9186da207c",
+                "resourcePath": "sprites\\player_wall_kick\\player_wall_kick.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -588,6 +620,14 @@
                 "id": "a8aeafea-6867-4764-85d1-58944a2b144d",
                 "resourcePath": "rooms\\small_4\\small_4.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "814acc3e-9755-4cee-98c0-e16ac8a8affb",
+            "Value": {
+                "id": "e8b1f306-dab6-4494-927a-45ecfbd635d7",
+                "resourcePath": "objects\\camera\\camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1247,11 +1287,11 @@
             }
         },
         {
-            "Key": "e94326eb-695d-414a-9969-78a7685b66e5",
+            "Key": "eb7ce079-21c2-4b6f-8d21-d5caa1165359",
             "Value": {
-                "id": "5d959d09-d99a-47e9-9f19-3e0ba4d4eb9d",
-                "resourcePath": "rooms\\combat_test\\combat_test.yy",
-                "resourceType": "GMRoom"
+                "id": "93a03439-9fba-4626-bd41-e5255c835b62",
+                "resourcePath": "sprites\\border_temp1\\border_temp1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

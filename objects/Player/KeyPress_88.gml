@@ -1,4 +1,9 @@
-if(!frozen && !climbing){
+var doorCheck = true;
+if(instance_exists(door)){
+var nearest = instance_nearest(x,y,door);
+doorCheck = (sqrt(sqr(x-nearest.x) + sqr(y-nearest.y))>=200);
+}
+if(!frozen && !climbing && doorCheck){
 	frozen = true
 	if(!inAir){
 		if(keyboard_check(vk_up)){

@@ -8,6 +8,9 @@ while(!completed){
 				if(rectangle_in_rectangle(other.x-other.rwidth/2,other.y-other.rheight/2,other.x+other.rwidth/2,other.y+other.rheight/2,x-rwidth/2,y-rheight/2,x+rwidth/2,y+rheight/2)){
 					mp_linear_step(other.x,other.y,-64,false)
 					level_generator.completed = false
+					if(x<0 || x>room_width || y<0 || y>room_height){
+						instance_destroy(self)	
+					}
 				}
 			}
 		}

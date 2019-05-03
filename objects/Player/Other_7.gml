@@ -18,4 +18,7 @@ switch(sprite_index){
 	sprite_index = player_standing
 	frozen = false
 	break;
+	case player_wall_kick:
+	sprite_index = player_air
+	break;
 }
