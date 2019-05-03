@@ -26,6 +26,11 @@ walkTime = random_range(walkRangeMin * 60, walkRangeMax* 60);
 EGspeed = 3
 walkDir = choose(0,180)
 
+//variables for state 2
+chasingSpeed = 3.15;
+sight_width = 640;
+losingSight_width = 960;
+
 
 
 
