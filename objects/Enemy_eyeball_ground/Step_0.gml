@@ -54,6 +54,11 @@ switch (state)
 	break;
 	
 	case 2:
+	jumpT += 1;
+	if(jumpT > jumpTime){
+	jumpT = 0;
+	jump(5);
+	}
 	//the enemy is going to chase the player
 	if (enemy_detection(losingSight_width, losingSight_height)){ //the losing sight area is larger than the sight are			
 					
@@ -78,6 +83,7 @@ switch (state)
 		//if the enemy does not see the player, go back to stationary
 		state = 0;
 		hspeed = 0;
+		jumpT = 0
 	}
 	break;
 

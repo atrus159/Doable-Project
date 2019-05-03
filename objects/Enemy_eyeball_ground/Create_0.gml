@@ -34,7 +34,8 @@ losingSight_width = 1280;
 losingSight_height = 640;
 
 
-
+jumpTime = 60
+jumpT = 0 
 
 
 
