@@ -1,4 +1,4 @@
-
+if(sprite_index != player_ledge){
 if((!place_meeting(x,y+1,standable) || place_meeting(x,y,standable) )&& !climbing){
 motion_add(-90,pGravity)
 inAir = true;
@@ -75,4 +75,5 @@ if(sprite_index == player_standing && frozen && !inAir){
 }
 if(climbing && !keyboard_check(vk_down) && !keyboard_check(vk_up)){
 	sprite_index = player_climbing_stationary	
+}
 }

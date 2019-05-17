@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "2ba2f375-b799-4927-9f09-2d47444da063",
+            "Value": {
+                "id": "403e68c6-059c-4592-84d8-1bc73cf8b249",
+                "resourcePath": "sprites\\player_ledge\\player_ledge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2c9e03b1-6078-4edc-a263-676cd4f6a2da",
             "Value": {
                 "id": "b9482720-9586-46ed-97f7-8d6e0c510cac",
@@ -466,7 +474,7 @@
             "Key": "62e7fda8-f19f-4c34-80b7-9dad83822bcd",
             "Value": {
                 "id": "43aefd73-8198-405f-9820-226a9429acea",
-                "resourcePath": "objects\\freezeFrame\\freezeFrame.yy",
+                "resourcePath": "objects\\hitFrame\\hitFrame.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -831,6 +839,14 @@
             }
         },
         {
+            "Key": "a99d274b-3278-432f-9a14-b7205dab788e",
+            "Value": {
+                "id": "0d660063-b19d-46c1-9013-43e1b94d1107",
+                "resourcePath": "shaders\\damage_shader\\damage_shader.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "a9af33c7-2923-4418-910b-30be73b370d4",
             "Value": {
                 "id": "fb964d6d-9066-41f8-85d9-68e2eb09ddaf",
@@ -1031,6 +1047,14 @@
             }
         },
         {
+            "Key": "c88c9dd6-13dc-429f-8e88-ee7cc0d14f2c",
+            "Value": {
+                "id": "00bb0abc-c5b7-4929-ae54-37abc9434370",
+                "resourcePath": "objects\\freezeFrame\\freezeFrame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c8d7a10f-7940-4258-b76b-21285b4333a0",
             "Value": {
                 "id": "05b8c112-fa4e-4d22-bad6-37573e427a57",
@@ -1204,6 +1228,14 @@
                 "id": "ffd30487-4541-4b04-8dba-5f534186c63a",
                 "resourcePath": "scripts\\line_in_rectangle\\line_in_rectangle.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "df3238c2-2ec0-4c58-999a-400f03592e0a",
+            "Value": {
+                "id": "77e2784d-b66b-4f49-8aa5-aedabdbb6b09",
+                "resourcePath": "shaders\\invul_shader\\invul_shader.yy",
+                "resourceType": "GMShader"
             }
         },
         {

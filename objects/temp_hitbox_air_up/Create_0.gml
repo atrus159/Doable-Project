@@ -1,4 +1,4 @@
 event_inherited()
 angle = 90
-knockback = 35
+knockback = 25
 freeze = true

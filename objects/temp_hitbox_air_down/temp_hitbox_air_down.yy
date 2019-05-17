@@ -5,16 +5,6 @@
     "name": "temp_hitbox_air_down",
     "eventList": [
         {
-            "id": "6f6b141f-45e0-40fd-9d22-77f6a1329573",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "18ccd25d-46f6-4bf9-afe8-a755d898ad61"
-        },
-        {
             "id": "13b729cd-0946-4b09-8d7e-382438991fbe",
             "modelName": "GMEvent",
             "mvc": "1.0",
