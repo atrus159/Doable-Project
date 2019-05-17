@@ -21,4 +21,10 @@ switch(sprite_index){
 	case player_wall_kick:
 	sprite_index = player_air
 	break;
+	case player_ledge:
+	sprite_index = player_standing
+	frozen = false;
+	x += facing*64;
+	y -=pHeight-2;
+	break;
 }

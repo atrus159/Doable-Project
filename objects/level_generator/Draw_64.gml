@@ -285,6 +285,9 @@ for(var i = 32; i<room_width; i+=64){
 							create = false	
 						}
 					}
+					if(point_distance(i,j,startx,endy)<level_generator.hwidth){
+						create = false
+					}
 				break;
 				case 3:
 					if(point_distance(i,j,endx,j)<level_generator.hwidth){
@@ -296,6 +299,9 @@ for(var i = 32; i<room_width; i+=64){
 						if(is_between(i,endx,startx)){
 							create = false	
 						}
+					}
+					if(point_distance(i,j,endx,starty)<level_generator.hwidth){
+						create = false
 					}
 				break;
 			}

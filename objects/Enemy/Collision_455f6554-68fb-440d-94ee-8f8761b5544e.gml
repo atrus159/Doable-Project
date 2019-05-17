@@ -6,10 +6,10 @@ if(ds_list_find_index(hitboxes_hit,other)==-1){
 	eHealth -=other.damage
 	if(other.angle == -1){
 		var hitDir = 180-darctan2(other.y-y,other.x-x)
-		motion_add(hitDir,other.knockback*knockback_mod/2)
+		motion_set(hitDir,other.knockback*knockback_mod/2)
 		motion_add(90,10)
 	}else{
-		motion_add(other.angle,other.knockback*knockback_mod)
+		motion_set(other.angle,other.knockback*knockback_mod)
 	}
 	if(other.pogo){
 		with(Player){
@@ -17,8 +17,8 @@ if(ds_list_find_index(hitboxes_hit,other)==-1){
 		}
 	}
 	if(other.freeze){
-	if(!instance_exists(freezeFrame)){
-		instance_create_depth(0,0,-1,freezeFrame)
+	if(!instance_exists(hitFrame)){
+		instance_create_depth(0,0,-1,hitFrame)
 	}	
 	}
 }
