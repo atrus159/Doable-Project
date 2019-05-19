@@ -1,4 +1,4 @@
-if(!place_meeting(x,y+1,wall)){
+if(!place_meeting(x,y+1,wall) && eGravity !=0){
 motion_add(-90,eGravity)
 inAir = true;
 }else{

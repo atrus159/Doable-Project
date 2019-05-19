@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "074ec933-45fa-4252-b255-7c1b118c55b5",
+            "Value": {
+                "id": "0a064f4d-48d6-4a9e-8855-ba79024e353a",
+                "resourcePath": "sprites\\eyeball_fly_sprt\\eyeball_fly_sprt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08ebc4ab-929a-4f70-b159-0ce651d6a55c",
             "Value": {
                 "id": "d6c44dbf-ffb0-416c-9f9a-7aa5ce1519a1",
@@ -172,6 +180,14 @@
                 "id": "183f6298-7ce2-4b35-a66e-60f29b1d7bec",
                 "resourcePath": "views\\26c3fa42-9076-479c-be70-eed621e72e9d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "286077f0-7137-44a8-b5b5-9434ae1a7558",
+            "Value": {
+                "id": "cd797872-52dc-40d4-9b43-830125f5c846",
+                "resourcePath": "objects\\Enemy_eyeball_air\\Enemy_eyeball_air.yy",
+                "resourceType": "GMObject"
             }
         },
         {
