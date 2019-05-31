@@ -7,6 +7,8 @@
 switch (state){
 	//state 0
 	case 0:
+	hspeed = hspeed * 0.97;
+    vspeed = vspeed * 0.97;
 
    waitFrames = waitFrames + 1; 
    if (waitFrames > waitTime){
@@ -38,7 +40,7 @@ switch (state){
 	   //flyHDir for horizontal, -1 for left, 1 for right
       
 	  
-		if ( collision_circle(x,y,WDradius, wall, false, true) == noone ){
+		if (collision_circle(x,y,WDradius, wall, false, true) == noone){
 			//the accerlaration of the enemy	
 
 		 if(flyHDir == 1){
@@ -56,8 +58,30 @@ switch (state){
 	   
 	}else{
 		
-		HflyAcc = - HflyAcc;
-		VflyAcc = - VflyAcc;
+			var _list = ds_list_create();
+			var n = collision_circle_list(x,y,WDradius, wall, false, true, _list, false);
+			var xAvg = 0;
+			var yAvg = 0;
+			for(var i =0; i<n; i++){
+				var current = ds_list_find_value(_list,i);
+				xAvg += current.x;
+				yAvg += current.y;
+			}
+			xAvg /= n;
+			yAvg /= n;
+		 
+		 if(xAvg > x){
+		   hspeed -= HflyAcc;
+	   }
+	   if (xAvg < x){
+		   hspeed += HflyAcc;
+	   }
+	   if (yAvg > y){
+		   vspeed -= VflyAcc;
+	   }
+	   if(yAvg < y){
+		   vspeed += VflyAcc;;
+	   }
 		
 	}
 
