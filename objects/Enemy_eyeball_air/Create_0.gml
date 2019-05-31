@@ -22,8 +22,8 @@ waitTime = random_range(waitRangeMin * 60, waitRangeMax * 60); //set the value t
 
 //variables for state 1
 flyFrames = 0;
-VflyAcc = 0;
-HflyAcc = 0;
+VflyAcc = 0.005;
+HflyAcc = 0.005;
 
 //make a variable to store the dir
 flyVDir = choose(-1,1);
@@ -31,16 +31,19 @@ flyHDir = choose(-1,1);
 flyRangeMin = 1;
 flyRangeMax = 3;
 flyTime = random_range(flyRangeMin * 60, flyRangeMax* 60);
-accSpeed = 0.001; //1-0
 
 //max speeds
 maxVSpeed = 2;
 maxHSpeed = 4;
 
+//boolean for wall detection
+//variables for wall collision
+
+WDradius = 100;
+
 //variables for state 2
-ChaseSpeed = 0.0005; //3-0
-VChaseAcc = 0;
-HChaseAcc = 0;
+VChaseAcc = 0.7;
+HChaseAcc = 0.7;
 sight_width = 0;
 sight_height = 0;
 losingSight_width = 0;

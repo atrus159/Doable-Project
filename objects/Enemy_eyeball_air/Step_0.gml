@@ -33,35 +33,34 @@ switch (state){
 	//enemy is going to wait for a certain amount of time
 	//and if it will not collide with the wall
 	
-		//use lengthdir to check the place meeting function
-		
-		
-		//flyVDir for vertical, -1 for left, 1 for right
-	   //flyHDir for horizontal, -1 for up, 1 for down
-	   vspeed += VflyAcc;
-	   hspeed += HflyAcc;
-   
-	   //the accerlaration of the enemy
-	   if (flyVDir == 1){
-		   VflyAcc += accSpeed;
-	   }
-	   if(flyVDir == -1){
-		   VflyAcc -= accSpeed;
-	   }
-	   if(flyHDir == 1){
-		   HflyAcc += accSpeed;
+		//use collision_circle to check the place meeting function	
+		//flyVDir for vertical, -1 for up, 1 for down
+	   //flyHDir for horizontal, -1 for left, 1 for right
+      
+	  
+		if ( collision_circle(x,y,WDradius, wall, false, true) == noone ){
+			//the accerlaration of the enemy	
+
+		 if(flyHDir == 1){
+		   hspeed += HflyAcc;
 	   }
 	   if (flyHDir == -1){
-		   HflyAcc -= accSpeed;
+		   hspeed -= HflyAcc;
+	   }
+	   if (flyVDir == 1){
+		   vspeed += VflyAcc;
+	   }
+	   if(flyVDir == -1){
+		   vspeed -= VflyAcc;;
 	   }
 	   
-	if (place_meeting(x + (lengthdir_x ( (speed + 256), direction) ), y, wall) ||
-		place_meeting(x, y + (lengthdir_y( (speed + 256), direction ) ), wall) ){   
-			
-			VflyAcc = - VflyAcc;
-			HflyAcc = - HflyAcc;
+	}else{
+		
+		HflyAcc = - HflyAcc;
+		VflyAcc = - VflyAcc;
 		
 	}
+
 	
 	}else{
 		//in the end it will go to state 0 if it does not detect the player
@@ -72,7 +71,9 @@ switch (state){
 			state = 0;
 			flyVDir = choose(-1,1);
 			flyHDir = choose(-1,1);
-}
+			
+	}
+		
 		
 	
 	//check if it sees the player
@@ -95,7 +96,7 @@ switch (state){
 		
 			if (!place_meeting(x-(vspeed+1), y, wall)){
 				 //chase left
-				 HChaseAcc -= ChaseSpeed; 
+				 hspeed -= HChaseAcc; 
 			}
 		
 			}
@@ -103,14 +104,14 @@ switch (state){
 			if(x - Player.x < 0){
 				 if (!place_meeting(x+(vspeed+1), y, wall)){//if the enemy is on the left
 					 //chase right
-				HChaseAcc += ChaseSpeed; 
+				hspeed += HChaseAcc; 
 			}
 		}
 			
 			if (y - Player.y < 0){ // if the enemy is above the player	
 			if (!place_meeting(x, y + (hspeed+1), wall)){
 				 //chase down
-				 VChaseAcc += ChaseSpeed; 
+				 vspeed += VChaseAcc; 
 			}
 		
 			 }
@@ -118,7 +119,7 @@ switch (state){
 			 if(y - Player.y > 0){
 				 if (!place_meeting(x, y - (hspeed+1), wall)){//if the enemy is below
 					 //chase up
-				VChaseAcc -= ChaseSpeed; 
+				vspeed -= VChaseAcc;
 			}
 		}
 		
@@ -131,7 +132,8 @@ switch (state){
 	
 	break;
 }
-	
+
+//if for some reasons that the speed is too fast
 if (vspeed > maxVSpeed){
 	vspeed = maxVSpeed;
 }else if( vspeed < -maxVSpeed){
