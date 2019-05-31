@@ -31,15 +31,18 @@ flyHDir = choose(-1,1);
 flyRangeMin = 1;
 flyRangeMax = 3;
 flyTime = random_range(flyRangeMin * 60, flyRangeMax* 60);
-accSpeed = 0.00025; //3-0
+accSpeed = 0.001; //1-0
 
+//max speeds
+maxVSpeed = 2;
+maxHSpeed = 4;
 
 //variables for state 2
 ChaseSpeed = 0.0005; //3-0
 VChaseAcc = 0;
 HChaseAcc = 0;
-sight_width = 1000;
-sight_height = 1000;
-losingSight_width = 1280;
-losingSight_height = 1200;
+sight_width = 0;
+sight_height = 0;
+losingSight_width = 0;
+losingSight_height = 0;
 
