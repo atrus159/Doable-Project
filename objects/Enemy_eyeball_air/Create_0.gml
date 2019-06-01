@@ -15,7 +15,7 @@ falling_sprite = eyeball_fly_sprt
 standing_sprite = eyeball_fly_sprt
 hitstun_sprite = eyeball_hit_sprt
 eGravity = 0;
-knockback_mod = 3
+knockback_mod = 0.4
 //variables for state 0
 state = 0
 waitFrames = 0

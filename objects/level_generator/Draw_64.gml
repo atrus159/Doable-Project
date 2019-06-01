@@ -432,6 +432,7 @@ break;
 case 10:
 
 instance_deactivate_object(wall)
+camera.create_flag = 0;
 instance_destroy(self)
 	
 break;

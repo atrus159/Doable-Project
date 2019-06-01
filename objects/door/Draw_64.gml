@@ -9,6 +9,6 @@ var xx = (x-cx)*display_scalex;
 var yy = (y-cy)*display_scaley;
 draw_set_alpha(0.7)
 var theta = arctan2(y-Player.y,x-Player.x)
-draw_sprite(x_button,-1,xx+20*cos(theta),yy+20*sin(theta))
+draw_sprite(z_button,-1,xx+20*cos(theta),yy+20*sin(theta))
 draw_set_alpha(1)
 }

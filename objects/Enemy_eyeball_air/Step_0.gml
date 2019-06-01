@@ -159,6 +159,7 @@ switch (state){
 }
 
 //if for some reasons that the speed is too fast
+if(state != -1 && state != 0){
 if (vspeed > maxVSpeed){
 	vspeed = maxVSpeed;
 }else if( vspeed < -maxVSpeed){
@@ -169,4 +170,5 @@ if (hspeed > maxHSpeed){
 	hspeed = maxHSpeed;
 }else if( hspeed < -maxHSpeed){
 	hspeed = -maxHSpeed;
+}
 }

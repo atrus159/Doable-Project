@@ -1,6 +1,4 @@
-if(create_flag>0){
-	create_flag -=1;	
-}else{
+if(create_flag==0){
 instance_deactivate_object(wall)
 instance_activate_region(x-2000,y-2000,4000,4000,true)
 instance_deactivate_object(Enemy);

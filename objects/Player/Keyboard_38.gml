@@ -14,7 +14,12 @@ if(climbing){
 		if(!place_meeting(x+facing*65,y-pHeight/2-64,wall)){
 			sprite_index = player_ledge;
 			image_index = 0;
-			move_snap(32,32);
+			while(!place_meeting(x+facing*1,y,wall)){
+				x+=facing
+			}
+			while(!place_meeting(x+facing*65,y-pHeight/2-1,wall)){
+				y -= 1;
+			}
 			frozen = true;
 			motion_set(0,0);
 		}
