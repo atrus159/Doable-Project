@@ -431,6 +431,7 @@ with(gen_hallway){
 break;
 case 10:
 
+instance_deactivate_object(wall)
 instance_destroy(self)
 	
 break;

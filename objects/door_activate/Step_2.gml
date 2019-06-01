@@ -6,6 +6,7 @@ if(t<=0){
 			other.t = 10
 			instance_deactivate_object(self)
 		}else{
+			activator = noone;
 			instance_destroy(other)
 		}
 	}

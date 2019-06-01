@@ -5,14 +5,17 @@
 event_inherited();
 randomize();
 
+
+
+
 //same as the ground one, but with less health
 eHealth = 4
 eMaxHealth = 4
-falling_sprite = eyeball_sprt
-standing_sprite = eyeball_sprt
-hitstun_sprite = eyeball_sprt
+falling_sprite = eyeball_fly_sprt
+standing_sprite = eyeball_fly_sprt
+hitstun_sprite = eyeball_hit_sprt
 eGravity = 0;
-
+knockback_mod = 3
 //variables for state 0
 state = 0
 waitFrames = 0

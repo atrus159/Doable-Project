@@ -13,3 +13,5 @@ if(sprite_index == player_roll){
 if(abs(hspeed)>pSpeed){
 	hspeed /= 1.01;	
 }
+
+

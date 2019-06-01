@@ -26,8 +26,10 @@ if(place_meeting(x+hspeed,y,wall)){
 	if(direction>90 && direction<270){
 		dir = -1	
 	}
+	if(dir != 0){	
 	while(!place_meeting(x+dir,y,wall)){
 		x+=dir
+	}
 	}
 	hspeed = 0
 }

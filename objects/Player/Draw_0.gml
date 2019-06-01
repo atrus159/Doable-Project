@@ -15,3 +15,6 @@ shader_reset()
 if(instance_exists(freezeFrame)){
 	shader_set(hit_shader)
 }
+//draw_set_color(c_white)
+//draw_text(x-64,y-80,image_speed)
+//draw_text(x-64,y-64,image_index)

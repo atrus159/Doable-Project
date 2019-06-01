@@ -69,6 +69,7 @@ switch (state){
 			}
 			xAvg /= n;
 			yAvg /= n;
+			ds_list_destroy(_list)
 		 
 		 if(xAvg > x){
 		   hspeed -= HflyAcc;

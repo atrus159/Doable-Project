@@ -14,3 +14,4 @@ climbSpeed = 4
 stunned = 0
 invulnerable = 0
 instance_create_depth(x,y,-1,camera);
+image_speed = 1;
