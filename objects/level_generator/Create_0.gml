@@ -7,9 +7,11 @@ generationHeight = 4
 roomCount = 50
 generationRadius = 1000
 mainRoomCount = 15
-
 smallWidth = 10
 smallHeight = 10
+
+topRoom = noone
+
 
 mediumWidth = 16
 mediumHeight = 12

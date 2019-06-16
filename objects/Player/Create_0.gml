@@ -2,7 +2,7 @@ pWidth = 64
 pHeight = 128
 pSpeed = 5
 jumpSpeed = 16
-frozen = false
+frozen = true
 maxFallSpeed = 20
 pGravity = 0.5
 inAir = false
@@ -13,5 +13,8 @@ climbing = false
 climbSpeed = 4
 stunned = 0
 invulnerable = 0
-instance_create_depth(x,y,-1,camera);
+pMaxHealth = 5
+pHealth = 5
+//instance_create_depth(x,y,-1,camera);
 image_speed = 1;
+vspeed = maxFallSpeed

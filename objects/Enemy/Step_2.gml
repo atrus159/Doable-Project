@@ -35,6 +35,8 @@ if(place_meeting(x+hspeed,y,wall)){
 }
 
 if(eHealth<=0){
-	instance_create_depth(x,y,0,corpse)
+	var myCorpse = instance_create_depth(x,y,0,corpse)
+	myCorpse.direction = direction
+	myCorpse.speed = speed
 	instance_destroy(self)	
 }

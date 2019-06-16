@@ -9,6 +9,14 @@ switch(sprite_index){
 	break;
 	case player_walking:
 	break;
+	case player_landing:
+	sprite_index = player_standing;
+	frozen = false;
+	camera.startFlag = 1
+	break;
+	case player_corpse:
+	room_restart()
+	break;
 	case player_roll:
 	sprite_index = player_end_roll
 	break;

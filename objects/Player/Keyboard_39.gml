@@ -1,3 +1,7 @@
+
+
+
+
 var airAttack = (sprite_index == currentWeapon.sprite_a_right) || (sprite_index == currentWeapon.sprite_a_left) || (sprite_index == currentWeapon.sprite_a_up) || (sprite_index == currentWeapon.sprite_a_down)
 
 if(!frozen || (airAttack)){

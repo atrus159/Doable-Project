@@ -1,4 +1,4 @@
-if(instance_exists(Player)){
+if(instance_exists(Player) && startFlag){
 if(centeringX == 0){
 	if(abs(Player.x-x)>xrange){
 		centeringX = sign(Player.x-x);
@@ -22,34 +22,8 @@ if(centeringY == 0){
 }
 
 
-/*
-if(!centeringX){
-	if(abs(Player.x-camera_get_view_x(view_camera[0])-512)>xrange){
-		centeringX = true;
-		camera_set_view_border(view_camera[0],500,camera_get_view_border_y(view_camera[0]))
-	}
-}else{
-	if(abs(Player.x-camera_get_view_x(view_camera[0])-512)<5){
-		centeringX = false;
-		camera_set_view_border(view_camera[0],0,camera_get_view_border_y(view_camera[0]))
-	}
-	else{
-		camera_set_view_speed(view_camera[0],abs(Player.x-camera_get_view_x(view_camera[0])-512)/30,camera_get_view_speed_y(view_camera[0]))
-	}
+camera_set_view_pos(view_camera[0],x-widthOffset+random_range(global.shake, -global.shake),y-heightOffset+random_range(global.shake, -global.shake))
+global.shake*=0.9;
+if(global.shake<0.1){
+global.shake = 0;
 }
-
-if(!centeringY){
-	if(abs(Player.y-camera_get_view_y(view_camera[0])-384)>yrange){
-		centeringY = true;
-		camera_set_view_border(view_camera[0],camera_get_view_border_x(view_camera[0]),500)
-	}
-}else{
-	if(abs(Player.y-camera_get_view_y(view_camera[0])-384)<5){
-		centeringY = false;
-		camera_set_view_border(view_camera[0],camera_get_view_border_x(view_camera[0]),0)
-	}
-	else{
-		camera_set_view_speed(view_camera[0],camera_get_view_speed_x(view_camera[0]),abs(Player.y-camera_get_view_y(view_camera[0])-384)/10)
-	}
-}
-*/

@@ -33,7 +33,7 @@ sight_height = 576;
 losingSight_width = 1280;
 losingSight_height = 640;
 
-
+corpse = eyeball_corpse
 jumpTime = 60
 jumpT = 0 
 

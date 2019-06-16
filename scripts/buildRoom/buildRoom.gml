@@ -13,6 +13,14 @@ for(var i = 0; i<string_length(buildString); i++){
 	}
 	for(var j = 0; j<n; j++){
 	switch(block){
+		case "p":
+			instance_create_depth(tempx,tempy,0,Player)
+			tempy+=32
+		break;
+		case "c":
+			instance_create_depth(tempx,tempy,0,camera)
+			tempy+=32
+		break;
 		case "w":
 			if(noncritical){
 			instance_create_depth(tempx,tempy,0,noncritical_wall)

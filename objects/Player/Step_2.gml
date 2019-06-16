@@ -77,3 +77,7 @@ if(climbing && !keyboard_check(vk_down) && !keyboard_check(vk_up)){
 	sprite_index = player_climbing_stationary	
 }
 }
+if(pHealth <= 0){
+	sprite_index = player_corpse
+	frozen = true
+}

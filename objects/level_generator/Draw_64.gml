@@ -83,12 +83,12 @@ with(gen_room){
 greatestO.type = 1
 }
 
-var topRoom = noone
+topRoom = noone
 for(var i = 0; i<room_height; i++){
 	with(gen_room){
 		if(type == 1){
 			if(y = i){
-				topRoom = id
+				other.topRoom = id
 				break;
 			}
 		}
@@ -99,9 +99,9 @@ for(var i = 0; i<room_height; i++){
 }
 topRoom.rwidth = largeWidth * 64
 topRoom.rheight = largeHeight*64
+
 //ds_list_shuffle(large_rooms)
-//topRoom.room_code = ds_list_find_value(large_rooms,0)
-instance_create_depth(topRoom.x,topRoom.y,0,Player)
+
 var largeCount = 0
 with(gen_room){
 	if(type == 1 && rwidth == other.largeWidth && rheight == other.largeHeight){
@@ -239,6 +239,9 @@ with(gen_room){
 		room_code = ds_list_find_value(other.large_rooms[door_type],0)
 	}
 }
+
+topRoom.room_code = "enew:20nenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wne:9pe:14ce:13newe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenewe:36wnenew:20ne"
+//instance_create_depth(topRoom.x,topRoom.y-200,0,Player)
 
 break;
 case 8:

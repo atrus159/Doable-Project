@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "0d4793c9-e5e4-4a8b-a533-1f92a7f75bdc",
+            "Value": {
+                "id": "ec61e350-11c9-46e5-bda6-53f5847eca34",
+                "resourcePath": "objects\\blood_particle\\blood_particle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ddcff15-7d4e-4eb7-beb3-9ba1c2a2facc",
             "Value": {
                 "id": "6f274717-032a-4dab-8053-67c16d64fc1c",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "4250a0f6-0592-4221-b1b0-5b4215b1004f",
+            "Value": {
+                "id": "cc39b094-47f4-4a8d-a788-56e57f19403c",
+                "resourcePath": "objects\\camera_token\\camera_token.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "425ef286-0570-4b59-865a-882efa139ea5",
             "Value": {
                 "id": "20fe7670-15db-43d5-b3a2-367eed3cb53b",
@@ -563,6 +579,14 @@
             "Value": {
                 "id": "36df39c5-aa90-42a7-bcb2-c3855a206344",
                 "resourcePath": "sprites\\door_sprite_up\\door_sprite_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4b0ab1b6-8d79-4ef3-af0a-3a6e6a1c262f",
+            "Value": {
+                "id": "24970f59-503b-403d-b977-c5330838a3d4",
+                "resourcePath": "sprites\\eyeball_dead_temp\\eyeball_dead_temp.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -719,6 +743,14 @@
             }
         },
         {
+            "Key": "5e056c69-fb22-41df-8e25-f22f96e67807",
+            "Value": {
+                "id": "7ec2df52-3d1d-4382-aa8f-ec075e4c53ac",
+                "resourcePath": "sprites\\player_corpse\\player_corpse.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5e44d8db-b1b1-4842-b0ed-7022f7e77704",
             "Value": {
                 "id": "8f72261d-4be9-4ccd-9521-2c091d354a91",
@@ -831,6 +863,14 @@
             }
         },
         {
+            "Key": "68ff3b76-2185-4687-bfa4-7fed3b602a74",
+            "Value": {
+                "id": "8a1396a3-f061-47be-96cc-1b7978a89f67",
+                "resourcePath": "objects\\flyball_corpse\\flyball_corpse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6c1fd2b3-de30-4753-a99e-db0bd0d42f95",
             "Value": {
                 "id": "20887fe0-06bc-46ef-8901-79be54c909bc",
@@ -919,6 +959,14 @@
             }
         },
         {
+            "Key": "71ae27a6-6e61-447e-9f84-7f30166db4c3",
+            "Value": {
+                "id": "28170b56-87ac-4aa2-aec4-272cee54aa4f",
+                "resourcePath": "objects\\eyeball_corpse\\eyeball_corpse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "725070b6-89c6-4a3c-bd1e-6ace26c76612",
             "Value": {
                 "id": "76a38638-882b-409b-b9ca-044b78657074",
@@ -963,6 +1011,14 @@
             "Value": {
                 "id": "cd80bc7f-0e64-4c6d-8972-14a03162ed6d",
                 "resourcePath": "views\\787e05cc-09b0-4640-827e-ef43f900bfe6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7eeab803-a2c7-475f-a668-b4f3a6cf928d",
+            "Value": {
+                "id": "e48a8afd-5d43-4e7c-9423-80b535ae80d6",
+                "resourcePath": "views\\7eeab803-a2c7-475f-a668-b4f3a6cf928d.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1012,6 +1068,14 @@
                 "id": "0764516d-0c4a-4ab1-b2c6-075242d8520e",
                 "resourcePath": "rooms\\small_14\\small_14.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "82f110d4-6e31-449f-a1b2-43e496e4cbe3",
+            "Value": {
+                "id": "e103e46e-4996-4f93-9b56-0e25b2aad14b",
+                "resourcePath": "sprites\\window_size\\window_size.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1068,6 +1132,14 @@
                 "id": "cbd0dfc9-cfa5-45a1-82d3-066d16b1299a",
                 "resourcePath": "rooms\\small_12\\small_12.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "8bb71216-9618-4ecc-a608-485367850f52",
+            "Value": {
+                "id": "e9e79a7b-48a0-4c6f-9b81-c9291aeca378",
+                "resourcePath": "objects\\enemy_corpse\\enemy_corpse.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1132,6 +1204,14 @@
                 "id": "c53cb078-4e18-4e6a-a447-13d6cdcca5aa",
                 "resourcePath": "views\\95f4bb2b-205a-4f9c-bc1c-5656632187a9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "96422438-1e63-4666-82e3-6a381bb46fad",
+            "Value": {
+                "id": "da48b03c-a626-41d1-987b-8fa8d89fc0e5",
+                "resourcePath": "objects\\player_token\\player_token.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1212,6 +1292,14 @@
                 "id": "c9056662-1cea-412a-8f80-cef08f97348e",
                 "resourcePath": "objects\\noncritical_wall\\noncritical_wall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a10c4753-8eca-45da-89f6-47134815deee",
+            "Value": {
+                "id": "3c0ff2a0-d4ec-46f8-ad8d-e20331808955",
+                "resourcePath": "sprites\\blood_particle_sprt\\blood_particle_sprt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1503,11 +1591,27 @@
             }
         },
         {
+            "Key": "c49cd160-e085-4b87-9299-db5f69f3e433",
+            "Value": {
+                "id": "9e839c3e-4cb0-4d83-94d5-238910ada22b",
+                "resourcePath": "sprites\\flyball_dead_temp\\flyball_dead_temp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c4c32ba2-1232-46b4-be35-d2c36d47a6f4",
             "Value": {
                 "id": "72a1f693-03f0-488a-9d82-ffe3a3615441",
                 "resourcePath": "views\\c4c32ba2-1232-46b4-be35-d2c36d47a6f4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c542a1b7-c4b5-470d-8aac-d9131653e9ca",
+            "Value": {
+                "id": "01798e62-9924-420f-876d-21ff29a5adaa",
+                "resourcePath": "rooms\\spawn_room\\spawn_room.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

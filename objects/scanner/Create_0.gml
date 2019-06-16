@@ -3,6 +3,24 @@ for(var i = 0; i<=room_width; i+=32){
 	for(var j = 0; j<room_height; j+=32){
 		var found = 0
 		if(!found){
+			with(player_token){
+				if(x==i && y==j){
+					scan +="p"	
+					found =1
+					j+=32
+				}
+			}	
+		}
+		if(!found){
+			with(camera_token){
+				if(x==i && y==j){
+					scan +="c"	
+					found =1
+					j+=32
+				}
+			}	
+		}
+		if(!found){
 			with(wall_top){
 				if(x==i && y==j){
 					scan +="t"	

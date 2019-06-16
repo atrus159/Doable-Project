@@ -9,4 +9,4 @@ standing_sprite = player_standing
 hitstun_sprite = player_landing
 inAir = 0
 hitboxes_hit = ds_list_create()
-corpse = lamp_pic
+corpse = enemy_corpse

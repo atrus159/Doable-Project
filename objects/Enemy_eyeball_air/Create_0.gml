@@ -51,4 +51,5 @@ sight_width = 0;
 sight_height = 0;
 losingSight_width = 0;
 losingSight_height = 0;
+corpse = flyball_corpse
 
