@@ -2007,6 +2007,14 @@
             }
         },
         {
+            "Key": "ed30b0ba-78c3-4233-9edd-68ed18d481b0",
+            "Value": {
+                "id": "a11dbe28-8468-4f23-8d5d-afdf49b0e42f",
+                "resourcePath": "objects\\attractor\\attractor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ed93dc76-50a5-44fd-abee-37b1a93f5a7e",
             "Value": {
                 "id": "a70c1a32-0d50-4695-9ad9-627752e63c65",

@@ -1,4 +1,20 @@
+
+
 if(instance_exists(Player) && startFlag){
+var attract = false;
+var nearest = noone
+with(Player){
+	nearest = instance_nearest(x,y,attractor)
+	if(instance_exists(attractor) && distance_to_object(nearest)<800){
+		attract = true
+	}
+}
+if(attract){
+	var avX = (Player.x + nearest.x)/2
+	var avY = (Player.y + nearest.y)/2
+	mp_linear_step(avX,avY,distance_to_point(avX,avY)/50,false)
+}else{
+
 if(centeringX == 0){
 	if(abs(Player.x-x)>xrange){
 		centeringX = sign(Player.x-x);
@@ -18,6 +34,7 @@ if(centeringY == 0){
 	if(distance_to_point(x,Player.y+(yrange-yoff)*centeringY)<5){
 		centeringY = 0;	
 	}
+}
 }
 }
 
