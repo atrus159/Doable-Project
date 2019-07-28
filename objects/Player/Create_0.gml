@@ -13,8 +13,8 @@ climbing = false
 climbSpeed = 4
 stunned = 0
 invulnerable = 0
-pMaxHealth = 5
-pHealth = 5
+pMaxHealth = 10
+pHealth = 10
 //instance_create_depth(x,y,-1,camera);
 image_speed = 1;
 vspeed = maxFallSpeed
