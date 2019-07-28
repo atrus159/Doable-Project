@@ -1,2 +1,3 @@
 event_inherited()
-angle = 100
+angle = 120
+knockback = 7

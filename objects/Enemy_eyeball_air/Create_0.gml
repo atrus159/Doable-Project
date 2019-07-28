@@ -6,7 +6,7 @@ event_inherited();
 randomize();
 
 
-
+flying = 1
 
 //same as the ground one, but with less health
 eHealth = 2

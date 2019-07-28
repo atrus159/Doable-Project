@@ -3,5 +3,6 @@ if(!frozen){
 		frozen = true
 		sprite_index = player_roll
 		image_index = 0
+		invulnerable = 40
 	}
 }

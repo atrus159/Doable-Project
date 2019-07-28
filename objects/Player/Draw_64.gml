@@ -20,7 +20,7 @@ draw_line_width(xx-pWidth/2+(i/pMaxHealth)*(pWidth+20)-10,yy-pHeight/2-50,xx-pWi
 
 	
 	
-	if(invulnerable>0){
+	if(invulnerable>0 && sprite_index != player_roll){
 	shader_set(damage_shader);
 	time = shader_get_uniform(damage_shader, "time")
 	shader_set_uniform_f(time,0.5-(invulnerable/2)/exp(invulnerable/2))

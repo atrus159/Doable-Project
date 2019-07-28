@@ -10,3 +10,4 @@ hitstun_sprite = player_landing
 inAir = 0
 hitboxes_hit = ds_list_create()
 corpse = enemy_corpse
+flying = 0

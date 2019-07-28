@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "41707dbc-af63-4f0f-bf10-da1a430b0947",
+            "Value": {
+                "id": "f5881efa-7d34-4a3a-bf71-e85f4aa51768",
+                "resourcePath": "sprites\\attack_hitbox_right_goundr_sprt\\attack_hitbox_right_goundr_sprt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4205598a-2e9e-426d-a36a-768786a30c85",
             "Value": {
                 "id": "8120188b-1f4f-412a-b11a-d9ed1259680d",
@@ -1419,6 +1427,14 @@
             "Value": {
                 "id": "59a9a7d7-694b-49e8-b8c1-4420d12962e3",
                 "resourcePath": "sprites\\z_button\\z_button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "abefed59-5ffc-4b03-aee9-f310552e41a3",
+            "Value": {
+                "id": "461aa53b-b92a-44e5-8337-4348b7cd1171",
+                "resourcePath": "sprites\\atttack_hitbox_left_ground_sprt\\atttack_hitbox_left_ground_sprt.yy",
                 "resourceType": "GMSprite"
             }
         },
