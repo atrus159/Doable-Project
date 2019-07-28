@@ -10,3 +10,5 @@ draw_text(x + 50, y - 100, "flyHDir: " + string(flyHDir) );
 draw_text(x + 50, y - 125, "flyVDir: " + string(flyVDir) );
 
 draw_circle(x,y,WDradius,true);*/
+draw_set_color(c_lime)
+draw_text(x + 50,y - 50, state);

@@ -14,7 +14,11 @@ switch (state){
    if (waitFrames > waitTime){
 	   
 	   //if the frames hits waitTime, it will go into state 1
+	   if(random(100)<60){
+		   state = 2
+	   }else{
 	   state = 1;
+	   }
 	   
 	   //reset the frames and the waitTime
 	   waitFrames = 0;
@@ -23,9 +27,6 @@ switch (state){
    }
    
    //check if it sees the player
-   if (enemy_detection(sight_width, sight_height)){
-	   state = 2;
-   }
    
    break;
    
@@ -53,7 +54,7 @@ switch (state){
 		   vspeed += VflyAcc;
 	   }
 	   if(flyVDir == -1){
-		   vspeed -= VflyAcc;;
+		   vspeed -= VflyAcc;
 	   }
 	   
 	}else{
@@ -93,7 +94,11 @@ switch (state){
 		
 			flyFrames = 0;
 			flyTime = random_range(flyRangeMin * 60, flyRangeMax* 60);
+			if(random(100<60)){
+			state = 2	
+			}else{
 			state = 0;
+			}
 			flyVDir = choose(-1,1);
 			flyHDir = choose(-1,1);
 			
@@ -101,58 +106,53 @@ switch (state){
 		
 		
 	
-	//check if it sees the player
-   if (enemy_detection(sight_width, sight_height)){
-	   state = 2;
-   }
    
 	break;
 	
 	case 2:
-	if (enemy_detection(losingSight_width, losingSight_height)){
+	chaseFrames +=1
+	if (chaseFrames < chaseTime){
 		
-		//flyVDir for vertical, -1 for left, 1 for right
-	   //flyHDir for horizontal, -1 for up, 1 for down
-	   vspeed += VChaseAcc;
-	   hspeed += HChaseAcc;
+		if (collision_circle(x,y,WDChaseRadius, wall, false, true) == noone){
+		var xAccel = cos(arctan2(Player.y-y, Player.x-x))*HChaseAcc
+		var yAccel = sin(arctan2(Player.y-y, Player.x-x))*VChaseAcc
+		hspeed += xAccel
+		vspeed += yAccel
+		}else{
 		
-		//the losing sight area is larger than the sight are
-			if (x - Player.x > 0){ // if the enemy is on the right
+			var _list = ds_list_create();
+			var n = collision_circle_list(x,y,WDChaseRadius, wall, false, true, _list, false);
+			var xAvg = 0;
+			var yAvg = 0;
+			for(var i =0; i<n; i++){
+				var current = ds_list_find_value(_list,i);
+				xAvg += current.x;
+				yAvg += current.y;
+			}
+			xAvg /= n;
+			yAvg /= n;
+			ds_list_destroy(_list)
+		 
+		 if(xAvg > x){
+		   hspeed -= HflyAcc;
+	   }
+	   if (xAvg < x){
+		   hspeed += HflyAcc;
+	   }
+	   if (yAvg > y){
+		   vspeed -= VflyAcc;
+	   }
+	   if(yAvg < y){
+		   vspeed += VflyAcc;;
+	   }
 		
-			if (!place_meeting(x-(vspeed+1), y, wall)){
-				 //chase left
-				 hspeed -= HChaseAcc; 
-			}
-		
-			}
-			 
-			if(x - Player.x < 0){
-				 if (!place_meeting(x+(vspeed+1), y, wall)){//if the enemy is on the left
-					 //chase right
-				hspeed += HChaseAcc; 
-			}
-		}
-			
-			if (y - Player.y < 0){ // if the enemy is above the player	
-			if (!place_meeting(x, y + (hspeed+1), wall)){
-				 //chase down
-				 vspeed += VChaseAcc; 
-			}
-		
-			 }
-			 
-			 if(y - Player.y > 0){
-				 if (!place_meeting(x, y - (hspeed+1), wall)){//if the enemy is below
-					 //chase up
-				vspeed -= VChaseAcc;
-			}
-		}
+	}
 		
 	}else{
-		//if the enemy does not see the player, go back to stationary
+
 		state = 0;
-		hspeed = 0;
-		vspeed = 0;
+		chaseFrames = 0;
+		chaseTime = random_range(chaseRangeMin * 60, chaseRangeMax* 60);
 	}
 	
 	break;
@@ -160,15 +160,22 @@ switch (state){
 
 //if for some reasons that the speed is too fast
 if(state != -1 && state != 0){
-if (vspeed > maxVSpeed){
-	vspeed = maxVSpeed;
-}else if( vspeed < -maxVSpeed){
-	vspeed = -maxVSpeed;
+	var mvspeed = maxVSpeed
+	var mhspeed = maxHSpeed
+	if(state == 2){
+		mvspeed = ChasemaxVSpeed
+		mhspeed = ChasemaxHSpeed
+	}
+	
+if (vspeed > mvspeed){
+	vspeed = mvspeed;
+}else if( vspeed < -mvspeed){
+	vspeed = -mvspeed;
 }
 
-if (hspeed > maxHSpeed){
-	hspeed = maxHSpeed;
-}else if( hspeed < -maxHSpeed){
-	hspeed = -maxHSpeed;
+if (hspeed > mhspeed){
+	hspeed = mhspeed;
+}else if( hspeed < -mhspeed){
+	hspeed = -mhspeed;
 }
 }

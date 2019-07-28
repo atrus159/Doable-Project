@@ -38,7 +38,6 @@ if(centeringY == 0){
 }
 }
 
-
 camera_set_view_pos(view_camera[0],x-widthOffset+random_range(global.shake, -global.shake),y-heightOffset+random_range(global.shake, -global.shake))
 global.shake*=0.9;
 if(global.shake<0.1){

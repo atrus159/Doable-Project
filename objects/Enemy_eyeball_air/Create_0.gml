@@ -9,13 +9,13 @@ randomize();
 
 
 //same as the ground one, but with less health
-eHealth = 4
-eMaxHealth = 4
+eHealth = 2
+eMaxHealth = 2
 falling_sprite = eyeball_fly_sprt
 standing_sprite = eyeball_fly_sprt
 hitstun_sprite = eyeball_hit_sprt
 eGravity = 0;
-knockback_mod = 0.4
+knockback_mod = 1
 //variables for state 0
 state = 0
 waitFrames = 0
@@ -35,9 +35,19 @@ flyRangeMin = 1;
 flyRangeMax = 3;
 flyTime = random_range(flyRangeMin * 60, flyRangeMax* 60);
 
+
+//chase timing
+chaseFrames = 0
+chaseRangeMin = 2
+chaseRangeMax = 4
+chaseTime = random_range(chaseRangeMin*60, chaseRangeMax*60)
+
 //max speeds
 maxVSpeed = 2;
 maxHSpeed = 4;
+
+ChasemaxVSpeed = 4;
+ChasemaxHSpeed = 7;
 
 //boolean for wall detection
 //variables for wall collision
@@ -45,11 +55,10 @@ maxHSpeed = 4;
 WDradius = 200;
 
 //variables for state 2
-VChaseAcc = 0.7;
-HChaseAcc = 0.7;
-sight_width = 0;
-sight_height = 0;
-losingSight_width = 0;
-losingSight_height = 0;
+VChaseAcc = 0.25;
+HChaseAcc = 0.25;
+WDChaseRadius = 200;
+losingSight_width = 500;
+losingSight_height = 500;
 corpse = flyball_corpse
 
