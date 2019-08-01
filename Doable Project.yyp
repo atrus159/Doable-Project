@@ -1463,6 +1463,14 @@
             }
         },
         {
+            "Key": "ad147eda-0d50-4c17-9e64-32d0f0a80a84",
+            "Value": {
+                "id": "3eb53aeb-c9f6-40a5-8925-419ee5a8a993",
+                "resourcePath": "sprites\\atttack_hitbox_up_ground_sprite\\atttack_hitbox_up_ground_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae828afc-d676-4c34-b28f-c3438386e787",
             "Value": {
                 "id": "7baf08d0-e101-4c12-9b23-be69ff23e4c6",

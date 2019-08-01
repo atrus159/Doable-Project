@@ -24,5 +24,7 @@ if(ds_list_find_index(hitboxes_hit,other)==-1){
 	if(!instance_exists(hitFrame)){
 		instance_create_depth(0,0,-1,hitFrame)
 	}	
+	}else if(global.shake<3 && eHealth>0){
+		global.shake = 3	
 	}
 }

@@ -15,6 +15,7 @@ switch(sprite_index){
 	camera.startFlag = 1
 	break;
 	case player_corpse:
+	shader_reset()
 	room_restart()
 	break;
 	case player_roll:
@@ -27,6 +28,6 @@ switch(sprite_index){
 	sprite_index = player_standing
 	frozen = false;
 	x += facing*64;
-	y -=pHeight-2;
+	y -=pHeight-3;
 	break;
 }
